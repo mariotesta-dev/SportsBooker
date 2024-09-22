@@ -31,3 +31,9 @@ Android application to manage sports court reservations. We implemented several 
 <p align="center">
   <img src="./Screenshots/InShot_20240430_123004853.gif" alt="Animated GIF" style="width: 35%;" >
 </p>
+
+# Contributors
+- [Mario Testa](https://github.com/mariotesta-dev/)
+- [Mattia Mazzari](https://github.com/mattiamazzari/)
+- [Lorenzo Gangemi](https://github.com/GangemiLorenzo/)
+- [Luigi Crisci](https://github.com/crisci/)
