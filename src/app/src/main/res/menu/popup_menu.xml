@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/take_photo"
+        android:icon="@drawable/baseline_photo_camera_24"
+        android:title="Take Photo"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/choose_photo_from_gallery"
+        android:icon="@drawable/baseline_insert_photo_24"
+        android:title="Photo Library"
+        app:showAsAction="always"/>
+</menu>

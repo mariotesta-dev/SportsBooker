@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/interest_view_background"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <TextView
+        android:id="@+id/interest_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

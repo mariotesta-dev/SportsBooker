@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">SportsBooker</string>
+
+    <!-- SupportActionBar Titles -->
+    <string name="my_reservations_title">My Reservations</string>
+    <string name="profile_title">Profile</string>
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="search_players_title">Search players</string>
+
+
+    <string name="nameSurname">Achille Mago</string>
+    <string name="statistics">Statistics</string>
+    <string name="your_interests">Your interests</string>
+    <string name="your_skills">Set your skills</string>
+    <string name="descriptionValue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper lorem nec orci condimentum...</string>
+    <string name="age">24yo</string>
+    <string name="mastery">Skills</string>
+    <string name="location">Location</string>
+    <string name="locationValue">Turin</string>
+    <string name="nickname">\@nickname</string>
+    <string name="userimage">userImage</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="tennis">Tennis</string>
+    <string name="padel">Padel</string>
+    <string name="football">Football</string>
+    <string name="victories">Victories</string>
+    <string name="played">Played</string>
+    <string name="draws">Draws</string>
+    <string name="test">0</string>
+    <string name="more_skills">+3</string>
+    <string name="edit">Edit</string>
+    <string name="fullName">Full Name</string>
+    <string name="at">Nickname</string>
+    <string name="dob">Date of birth</string>
+    <string name="bodValue">09/04/1988</string>
+    <string name="email">Email</string>
+    <string name="emailValue">achille.mago@polito.it</string>
+    <string name="description">Description</string>
+    <string name="edit_picture">Change profile photo</string>
+    <string name="back">Back</string>
+    <string name="confirmEdit">Confirm</string>
+    <string name="preference_file_key">com.example.lab2.USER</string>
+    <string name="close">Close</string>
+    <string name="no_results">You have no reservations</string>
+    <string name="no_matches">There are no matches</string>
+    <string name="join_match">Join a match</string>
+    <string name="cleanliness_court">Cleanliness of the court</string>
+    <string name="playing_surface_quality">Playing surface quality</string>
+    <string name="lighting_court">Lighting of the court</string>
+    <string name="leave_a_rating">Leave a rating to a court you played in</string>
+    <string name="dont_show_again">Don\'t show again</string>
+    <string name="no_statistics">No matches stats found.</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login">Login</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="or_login_with">or login with</string>
+    <string name="welcome_to_the_app">Welcome to SportsBooker</string>
+    <string name="signup">Signup</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="username">Username</string>
+    <string name="select_interests">Choose at least 1 sport</string>
+    <string name="complete_your_registration">Complete your registration</string>
+    <string name="skip_for_now">Skip for now</string>
+    <string name="finish">Finish</string>
+    <string name="address">Via Giovanni Magni, 32</string>
+    <string name="no_notifications_found">No notifications found</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search_players">SearchPlayersActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="invite">Invite</string>
+    <string name="invited">Invited</string>
+    <string name="player_interest">Interests</string>
+    <string name="description_rating">Please leave or update your feedback about this court in order to help us enhance the game and make it even more enjoyable for everyone. Your rating and review will remain anonymous and will not be associated with your personal information.</string>
+
+</resources>

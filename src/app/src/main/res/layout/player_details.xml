@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_auto_start="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/example_1_bg"
+            app:cardCornerRadius="300dp"
+            android:backgroundTint="#DDDDDD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/player_image_details"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/circle_shape"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/baseline_my_profile" />
+
+                <FrameLayout
+                    android:id="@+id/selectedPlayerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                <View
+                    android:id="@+id/overlayView"
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:background="#5231A05E" />
+
+                <ImageView
+                    android:id="@+id/tickImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_check_24" />
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:paddingStart="20dp"
+    android:paddingBottom="10dp"
+    android:paddingEnd="20dp"
+    android:elevation="3dp"
+    android:background="@drawable/timeslot"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tvTimeslot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textAppearance="@style/TimeslotTextAppearance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTimeslot">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_my_profile"
+            app:tint="@color/example_1_bg" />
+
+        <TextView
+            android:id="@+id/tvPlayersLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="7 left"
+            android:textColor="@color/example_1_bg"
+            app:layout_constraintTop_toBottomOf="@id/tvTimeslot" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

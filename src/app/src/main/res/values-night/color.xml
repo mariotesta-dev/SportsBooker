@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="green">#123713</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="permanent_white">#FFFFFFFF</color>
+    <color name="permanent_black">#FF000000</color>
+    <color name="grey">#FFFFFFFF</color>
+    <color name="black">#FFFFFF</color>
+    <color name="white">#242424</color>
+    <color name="blue_primary">#1A2A99</color>
+    <color name="blue_secondary">#0D1779</color>
+    <color name="bright_green">#1E6A21</color>
+    <color name="example_1_bg">#1A763F</color>
+    <color name="example_1_bg_light">#23804A</color>
+    <color name="example_1_bg_secondary">#242424</color>
+    <color name="example_1_white_light">#242424</color>
+    <color name="example_1_white">#D9FFFFFF</color>
+    <color name="example_7_white">#D9FFFFFF</color>
+    <color name="example_7_yellow">#FFEB3B</color>
+    <color name="darker_blue">#FFFFFFFF</color>
+    <color name="darker_blue_disabled">#45868686</color>
+    <color name="timeslot">#B4575757</color>
+    <color name="today_color">#D1D1D1</color>
+    <color name="dull_red">#900000</color>
+    <color name="bright_red">#8F0000</color>
+    <color name="error">#900000</color>
+    <color name="gold">#DDBA00</color>
+    <color name="silver">#AAACB4</color>
+    <color name="bronze">#9F642A</color>
+</resources>

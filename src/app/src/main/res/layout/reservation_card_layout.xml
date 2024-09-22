@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/rectangle_rounded_shadowed"
+    android:backgroundTint="@color/white"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:id="@+id/court_name_reservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/detailReservationButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sport_name"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/sport_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:paddingBottom="0dp"
+            android:text="Padel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/court_name_reservation"
+            app:layout_constraintTop_toBottomOf="@+id/court_name_reservation"
+            app:layout_constraintVertical_bias="0.06999999">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:tint="@color/grey"
+                app:srcCompat="@drawable/baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/location_reservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/grey"
+                app:layout_constraintStart_toEndOf="@+id/imageView" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/price_reservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:text="0.00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/edit_reservation_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time_reservation"
+            app:layout_constraintVertical_bias="0.18" />
+
+        <TextView
+            android:id="@+id/time_reservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="4dp"
+            android:tint="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/time_reservation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_access_time_24" />
+
+        <LinearLayout
+            android:id="@+id/counter_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/number_players"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/sport_name"
+            app:layout_constraintStart_toEndOf="@+id/sport_name">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:src="@drawable/baseline_person_24" />
+
+            <TextView
+                android:id="@+id/current_number_of_players"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="6"
+                android:textColor="@color/dull_red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/max_number_players"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="/7"
+                android:textColor="@color/darker_blue"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/edit_reservation_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_card"
+            android:src="@drawable/baseline_edit_24"
+            android:tint="@color/permanent_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/detailReservationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangle_radius"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="More"
+            android:textAllCaps="false"
+            android:textColor="@color/permanent_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

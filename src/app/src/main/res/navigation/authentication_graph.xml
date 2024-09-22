@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/authentication_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.lab2.login.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_complete_registration_google"
+            app:destination="@id/complete_registration_google"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.example.lab2.login.FragmentSignup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signup_to_select_interests"
+            app:destination="@id/select_interests"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/select_interests"
+        android:name="com.example.lab2.login.FragmentSignupSelectInterests"
+        android:label="fragment_signup_select_interests"
+        tools:layout="@layout/fragment_signup_select_interests"/>
+
+    <fragment
+        android:id="@+id/complete_registration_google"
+        android:name="com.example.lab2.login.FragmentCompleteRegistrationGoogle"
+        android:label="fragment_complete_registration_google"
+        tools:layout="@layout/fragment_complete_registration_google">
+        <action
+            android:id="@+id/action_complete_registration_google_to_select_interests"
+            app:destination="@id/select_interests"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_to_login"
+        app:destination="@id/login"
+        app:enterAnim="@anim/slide_in_left"
+        app:exitAnim="@anim/slide_out_right"
+        app:popUpTo="@id/login"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_signup"
+        app:destination="@id/signup"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left" />
+</navigation>

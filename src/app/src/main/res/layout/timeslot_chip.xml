@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:text="11:00"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    android:textAppearance="@style/TimeslotTextAppearance"
+    app:chipMinHeight="35dp"
+    android:layout_marginEnd="3dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    >
+
+</com.google.android.material.chip.Chip>

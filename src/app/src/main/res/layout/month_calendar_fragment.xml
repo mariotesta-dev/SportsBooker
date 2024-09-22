@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:scrollbarThumbVertical="@null"
+    android:scrollbarTrackVertical="@null">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:paddingTop="15dp"
+    tools:context=".common.calendar.MonthCalendar">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/exOneAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/exOneYearText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/darker_blue"
+                android:textSize="24sp"
+                tools:text="2019" />
+
+            <TextView
+                android:id="@+id/exOneMonthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/montserrat_bold"
+                android:singleLine="true"
+                android:textColor="@color/darker_blue"
+                android:textSize="32sp"
+                tools:text="April" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/legendLayout"
+            layout="@layout/calendar_day_legend_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.kizitonwose.calendar.view.CalendarView
+            android:id="@+id/exOneCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cv_dayViewResource="@layout/month_calendar_calendar_day" />
+
+        <com.kizitonwose.calendar.view.WeekCalendarView
+            android:id="@+id/exOneWeekCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cv_dayViewResource="@layout/month_calendar_calendar_day" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

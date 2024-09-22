@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="timeslots">
+        <item>08:30</item>
+        <item>10:00</item>
+        <item>11:30</item>
+        <item>13:00</item>
+        <item>14:30</item>
+        <item>16:00</item>
+        <item>17:30</item>
+        <item>19:00</item>
+        <item>20:30</item>
+        <item>22:00</item>
+    </array>
+</resources>

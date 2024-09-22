@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_reservation_graph"
+    app:startDestination="@id/findBookReservation">
+
+    <fragment
+        android:id="@+id/findBookReservation"
+        android:name="com.example.lab2.reservation.book_reservation.BookReservationFragment"
+        android:label="fragment_book_reservation"
+        tools:layout="@layout/fragment_book_reservation" >
+    </fragment>
+    <fragment
+        android:id="@+id/fullScreenCalendar"
+        android:name="com.example.lab2.common.calendar.MonthCalendar"
+        android:label="fragment_full_screen_calendar"
+        tools:layout="@layout/month_calendar_fragment">
+        <action
+            android:id="@+id/action_fullScreenCalendar_to_findBookReservation"
+            app:destination="@id/findBookReservation"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/findBookReservation"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_to_fullScreenCalendar"
+        app:destination="@id/fullScreenCalendar"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left" />
+</navigation>

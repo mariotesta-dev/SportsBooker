@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_mvp_btn"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@drawable/circle_shape"
+        app:backgroundTint="@color/darker_blue"
+        app:icon="@drawable/baseline_send_24"
+        app:iconTint="@color/white"
+        android:foregroundGravity="center" />
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.FragmentLogin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/finish_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="32dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="@string/complete_your_registration"
+            android:textColor="@color/darker_blue"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/select_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="@string/select_interests"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/finish_registration" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_select_interests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/finish_registration"
+            app:layout_constraintStart_toStartOf="@+id/select_interests"
+            app:layout_constraintTop_toBottomOf="@id/select_interests" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rectangle_radius"
+            android:backgroundTint="@color/example_1_bg"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingHorizontal="50dp"
+            android:text="@string/finish"
+            android:textAllCaps="false"
+            android:textColor="@color/permanent_white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip_group_select_interests" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--            <ProgressBar
+                        android:id="@+id/loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="64dp"
+                        android:layout_marginBottom="64dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.3" />-->
+
+</FrameLayout>
